@@ -10,7 +10,6 @@ services:
         depends_on:
             - php
     php:
-        image: php-fpm:7.4
         build: ./docker/images/php
         volumes:
             - ./www:/var/www
